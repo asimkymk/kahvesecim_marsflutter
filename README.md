@@ -1,16 +1,18 @@
 # kahvesecim_marsflutter
 
-A new Flutter project.
+A Flutter Project for M.A.R.S Tech. hiring task.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Project made with Google Firebase in Flutter version 2.10.1
 
-A few resources to get you started if this is your first Flutter project:
+A few resources to get you started if you want to check:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [Task: Coffee Catalog Screen App](https://www.figma.com/proto/DBqBnyOT3J4LB3k1JGViiI/Kahve-Se%C3%A7im-Ekran%C4%B1?node-id=1%3A2&viewport=372%2C327%2C0.23863832652568817&scaling=scale-down)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+|![Home](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home.png?raw=true)|
+|![Filter](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Filter.png?raw=true)|
+|![Product Details](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/ProductDetails.png?raw=true)|
+|![Home Landscape](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home%202.png?raw=true)|
