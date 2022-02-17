@@ -12,7 +12,8 @@ A few resources to get you started if you want to check:
 
 ## Screenshots
 
-|![Home](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home.png?raw=true)|
-|![Filter](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Filter.png?raw=true)|
-|![Product Details](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/ProductDetails.png?raw=true)|
-|![Home Landscape](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home%202.png?raw=true)|
+|![Home](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home.png?raw=true)
+|![Filter](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Filter.png?raw=true)
+|![Product Details](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/ProductDetails.png?raw=true)
+|![Product Details](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/ProductDetails2.png?raw=true)
+|![Home Landscape](https://raw.githubusercontent.com/asimkymk/kahvesecim_marsflutter/main/screenshots/Home%202.png?raw=true)
