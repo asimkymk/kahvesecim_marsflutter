@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/product.dart';
+import '../screens/imageview.dart';
 
 class ProductView extends StatelessWidget {
   final Product? product;
@@ -17,14 +18,25 @@ class ProductView extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Image.network(
-              product!.imageUrl!,
-              fit: orientation == Orientation.landscape ? null : BoxFit.cover,
-              height: (MediaQuery.of(context).size.height -
-                      MediaQuery.of(context).padding.top -
-                      MediaQuery.of(context).padding.bottom) *
-                  0.4,
-              width: MediaQuery.of(context).size.width,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FullScreenPage(
+                              child: Image.network(product!.imageUrl!),
+                              dark: true,
+                            )));
+              },
+              child: Image.network(
+                product!.imageUrl!,
+                fit: orientation == Orientation.landscape ? null : BoxFit.cover,
+                height: (MediaQuery.of(context).size.height -
+                        MediaQuery.of(context).padding.top -
+                        MediaQuery.of(context).padding.bottom) *
+                    0.4,
+                width: MediaQuery.of(context).size.width,
+              ),
             ),
             SizedBox(
               height: 10,
