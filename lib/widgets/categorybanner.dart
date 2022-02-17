@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/category.dart';
+import '../screens/home.dart';
 
 class CategoryBanner extends StatelessWidget {
   final Category? category;
@@ -20,9 +21,16 @@ class CategoryBanner extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: 19,
             ),
-            child: Image.network(
-              category!.imageUrl!,
-              height: orientation == Orientation.landscape ? 40 : 60,
+            child: Opacity(
+              opacity: Home().getSelectedIndex() == 0
+                  ? 1
+                  : Home().getSelectedIndex() == category!.id!
+                      ? 1
+                      : 0.5,
+              child: Image.network(
+                category!.imageUrl!,
+                height: orientation == Orientation.landscape ? 40 : 60,
+              ),
             ),
           ),
           SizedBox(
@@ -30,7 +38,14 @@ class CategoryBanner extends StatelessWidget {
           ),
           Text(
             category!.title!,
-            style: TextStyle(fontSize: 14),
+            style: TextStyle(
+              fontSize: 14,
+              color: Home().getSelectedIndex() == 0
+                  ? Colors.black
+                  : Home().getSelectedIndex() == category!.id!
+                      ? Colors.black
+                      : Colors.grey,
+            ),
           )
         ],
       ),

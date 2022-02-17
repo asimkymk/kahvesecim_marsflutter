@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kahvesecim_marsflutter/screens/home.dart';
 import 'package:kahvesecim_marsflutter/screens/productDetails.dart';
 
 import '../models/product.dart';
