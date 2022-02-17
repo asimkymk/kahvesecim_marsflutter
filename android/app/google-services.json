@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924163967117",
+    "project_id": "mars-71770",
+    "storage_bucket": "mars-71770.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924163967117:android:158038544b78f4be713ac4",
+        "android_client_info": {
+          "package_name": "com.example.kahvesecim_marsflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924163967117-ejjkcdl41l3v97bdf1oolaesurs92n5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Iqf4sKnlx69u4TWkkL6eHYNyEir5xjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924163967117-ejjkcdl41l3v97bdf1oolaesurs92n5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
