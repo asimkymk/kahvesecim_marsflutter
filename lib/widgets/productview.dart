@@ -4,6 +4,13 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import '../models/product.dart';
 import '../screens/imageview.dart';
 
+/*
+TODO
+
+Product değiştiğinde player güncellenecek.
+
+*/
+
 class ProductView extends StatefulWidget {
   final Product? product;
   final double? height;
