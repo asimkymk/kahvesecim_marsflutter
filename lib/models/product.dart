@@ -11,6 +11,7 @@ class Product {
   final String? materialType;
   final String? productGroup;
   final String? origin;
+  final String? videoUrl;
   Product(
       {this.id,
       this.title,
@@ -23,5 +24,6 @@ class Product {
       this.color,
       this.materialType,
       this.productGroup,
-      this.origin});
+      this.origin,
+      this.videoUrl});
 }

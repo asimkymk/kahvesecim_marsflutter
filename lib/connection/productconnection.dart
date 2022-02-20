@@ -41,7 +41,8 @@ class ProductConnection extends StatelessWidget {
                 color: data['color'].toString(),
                 materialType: data['materialType'].toString(),
                 productGroup: data['productGroup'].toString(),
-                origin: data['origin'].toString()));
+                origin: data['origin'].toString(),
+                videoUrl: data['videoUrl'].toString()));
           }
 
           return Expanded(
