@@ -5,7 +5,7 @@ import '../models/category.dart';
 import '../widgets/categorybanner.dart';
 
 class CategoryConnection extends StatelessWidget {
-  late ValueChanged<int> _setSelectedIndex;
+  final ValueChanged<int> _setSelectedIndex;
   CategoryConnection(this._setSelectedIndex);
   @override
   Widget build(BuildContext context) {

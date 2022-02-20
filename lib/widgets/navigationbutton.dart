@@ -10,8 +10,7 @@ class NavigationButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    return InkWell(
+    return GestureDetector(
       onTap: () {
         onTap!();
       },
@@ -22,7 +21,13 @@ class NavigationButton extends StatelessWidget {
               padding: EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.white,
+                color: Color.fromARGB(255, 255, 255, 255),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(120, 0, 0, 0).withOpacity(0.08),
+                    blurRadius: 4,
+                  )
+                ],
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,

@@ -44,21 +44,21 @@ class _Home extends State<Home> {
                   Header(),
 
                   SizedBox(
-                    height: 18,
+                    height: 16,
                   ),
 
                   //BANNER
                   buildBanner(),
 
                   SizedBox(
-                    height: 18,
+                    height: 16,
                   ),
 
                   //Categories
 
                   CategoryConnection(setSelectedIndex),
 
-                  SizedBox(height: 18),
+                  SizedBox(height: 16),
 
                   //products
                   ProductConnection(selectedIndex),
@@ -80,11 +80,14 @@ class _Home extends State<Home> {
             children: [
               Text(
                 "EVİNDE KOLAYCA İÇECEĞİNİ HAZIRLA!",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
+              SizedBox(
+                height: 4,
+              ),
               Text("Hangi içecek türü sizi anlatıyor? Favori makineni seç",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
                   textAlign: TextAlign.center)
             ],
           ),

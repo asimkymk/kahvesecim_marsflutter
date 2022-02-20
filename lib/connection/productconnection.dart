@@ -5,7 +5,7 @@ import 'package:kahvesecim_marsflutter/widgets/productbutton.dart';
 import '../models/product.dart';
 
 class ProductConnection extends StatelessWidget {
-  int _selectedIndex;
+  final int _selectedIndex;
 
   ProductConnection(this._selectedIndex);
   @override

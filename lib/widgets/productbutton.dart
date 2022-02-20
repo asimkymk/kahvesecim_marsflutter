@@ -11,22 +11,11 @@ class ProductButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
     return InkWell(
-      /*onTap: () {
-      Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ProductInfo()))
-          .then((value) => {});
-    },*/
-
       onTap: () {
         Navigator.push(
             context,
             MaterialPageRoute(
                 builder: (context) => ProductDetails(product, index)));
-        /*onTap: () {
-      Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ProductInfo()))
-          .then((value) => {});
-    }*/
       },
       child: Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
@@ -35,8 +24,9 @@ class ProductButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(6),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(164, 0, 0, 0).withOpacity(0.08),
-                  blurRadius: 64,
+                  color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.1),
+                  blurStyle: BlurStyle.outer,
+                  blurRadius: 14,
                 )
               ]),
           child:

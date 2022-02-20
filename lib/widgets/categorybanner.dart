@@ -11,7 +11,7 @@ class CategoryBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
-    return InkWell(
+    return GestureDetector(
       onTap: () {
         setSelectedIndex!(category!.id!);
       },
@@ -34,7 +34,7 @@ class CategoryBanner extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 8,
+            height: 6,
           ),
           Text(
             category!.title!,
