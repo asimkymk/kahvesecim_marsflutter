@@ -62,6 +62,9 @@ class _Home extends State<Home> {
 
                   //products
                   ProductConnection(selectedIndex),
+                  SizedBox(
+                    height: 8,
+                  ),
                 ],
               )),
         ),
@@ -72,25 +75,20 @@ class _Home extends State<Home> {
   buildBanner() {
     return Container(
       width: double.infinity,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                "EVİNDE KOLAYCA İÇECEĞİNİ HAZIRLA!",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: 4,
-              ),
-              Text("Hangi içecek türü sizi anlatıyor? Favori makineni seç",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
-                  textAlign: TextAlign.center)
-            ],
+          Text(
+            "EVİNDE KOLAYCA İÇECEĞİNİ HAZIRLA!",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
+          SizedBox(
+            height: 4,
+          ),
+          Text("Hangi içecek türü sizi anlatıyor? Favori makineni seç",
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+              textAlign: TextAlign.center)
         ],
       ),
     );

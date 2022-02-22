@@ -4,8 +4,7 @@ import '../models/product.dart';
 
 class ProductView extends StatefulWidget {
   final Product? product;
-  final double? height;
-  ProductView({Key? key, this.product, this.height}) : super(key: key);
+  ProductView({Key? key, this.product}) : super(key: key);
 
   @override
   State<ProductView> createState() => _ProductView();
@@ -15,14 +14,17 @@ class _ProductView extends State<ProductView> {
   @override
   Widget build(BuildContext context) {
     final Product product = widget.product!;
-    final double height = widget.height!;
+    final double height = (MediaQuery.of(context).size.height -
+        MediaQuery.of(context).padding.top -
+        MediaQuery.of(context).padding.bottom);
+
     final Orientation orientation = MediaQuery.of(context).orientation;
     return Column(
       children: [
         Container(
           height: orientation == Orientation.landscape
               ? height * 0.24
-              : height * 0.44,
+              : height * 0.40,
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(

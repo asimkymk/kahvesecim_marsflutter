@@ -4,9 +4,9 @@ import 'package:kahvesecim_marsflutter/screens/productDetails.dart';
 import '../models/product.dart';
 
 class ProductButton extends StatelessWidget {
-  final List<Product> product;
+  final List<Product> products;
   final int index;
-  ProductButton(this.product, this.index);
+  ProductButton(this.products, this.index);
   @override
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
@@ -15,7 +15,7 @@ class ProductButton extends StatelessWidget {
         Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => ProductDetails(product, index)));
+                builder: (context) => ProductDetails(products, index)));
       },
       child: Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
@@ -35,14 +35,14 @@ class ProductButton extends StatelessWidget {
               height: 16,
             ),
             Image.network(
-              product[index].imageUrl!,
+              products[index].imageUrl!,
               height: orientation == Orientation.landscape ? 80 : 120,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
             SizedBox(
               height: 16,
             ),
-            Text(product[index].title!,
+            Text(products[index].title!,
                 style: TextStyle(
                     color: Color(0xFF0A1034),
                     fontWeight: FontWeight.w500,
